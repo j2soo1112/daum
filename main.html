@@ -170,7 +170,7 @@
                             <span>옥션</span>
                         </div>
                     </div>
-                    <div>
+                    <div class="shoppingContents">
                         <div class="brandList">
                             <ul>
                                 <li><a>하프클럽</a> ・ <a>패션플러스</a> ・ <a>쿠팡</a> ・ <a>11번가</a> ・ <a>GS샵</a> ・ <a>리빙픽</a></li>
@@ -514,7 +514,6 @@
     .shoppingPhotoBox{
         width: 300px;
         height: 735px;
-        background-color: #418cf7;
         display: flex;
         flex-wrap: wrap;
     }
@@ -539,10 +538,20 @@
     .shoppingBox .brandList ul a:hover{
         text-decoration: underline;
     }
-
+    .shoppingBox .shoppingContents .brandList{
+     text-align: center;
+    }
+    .shoppingBox .shoppingContents p {
+        word-spacing: 2px;
+        padding-top: 7px;
+    }
+    .shoppingBox .shoppingContents .shoppingPhotoBox{
+        padding: 8px 14px 0;
+    }
     .shoppingBox .shoppingPhotoBox img {
         width: 86px;
         height: 104px;
+        margin: 2px;
     }
     .shoppingPhotoBox p{
         margin: 0;
