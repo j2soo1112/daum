@@ -1,0 +1,394 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    line-height: 1.5;
+    font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #222;
+    cursor: pointer;
+}
+p{
+    padding: 0;
+}
+button{
+    margin: 0;
+}
+.headerSection .top a {
+    font-size: 11px;
+    color: #888;
+}
+.headerSection .top a:hover {
+    text-decoration: underline;
+    color: #418cf7;
+}
+.header {
+    display: flex;
+    align-items: center;
+    vertical-align: text-top;
+}
+.header a {
+    color: #555;
+    padding-right: 14px;
+}
+.header a:hover {
+    text-decoration: underline;
+}
+.logo {
+    width: 180px;
+    height: 94px;
+    padding-bottom: 20px;
+}
+
+.searchInput {
+    width: 520px;
+    height: 46px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    word-break: keep-all;
+}
+li {
+    padding: 4px;
+}
+nav {
+    border-top: 1px solid #ececec;
+    margin: 0;
+    padding: 0;
+    vertical-align: center;
+    border-bottom: 1px solid #888
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    margin-right: 5px;
+    padding: 10px 5px;
+}
+nav li a {
+    font-size: 13px;
+    font-weight: bold;
+}
+main {
+    margin: 15px 0 auto;
+}
+main{
+    display: flex;
+}
+.mainSection{
+    width: 655px;
+}
+.mainSection .mainNews ul {
+    margin: 0px auto;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 36px;
+    color: #222;
+}
+.mainSection .mainNews ul li a:not(.newsNavTitle) {
+    margin-right: 3px;
+}
+.mainSection .mainNews ul .dotBtn {
+    padding: 4px 0px;
+    letter-spacing: -10px;
+    padding-right: 10px;
+}
+.mainSection .mainNews ul .dotBtn a {
+    color: darkgray;
+}
+.newsSection .newsSectionTop {
+    display: flex;
+}
+.newsSection .newsSectionBottom{
+    display: flex;
+}
+.newsSection .newsImgBox{
+    width: 330px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.newsSection .newsTxtBox{
+    width: 316px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.newsSection .newsTxtBox .txtBox{
+    height: 150px;
+    margin: 5px 0;
+    line-height: 20px;
+}
+.newsSection .newsTxtBox .txtBox div {
+    padding: 3px 0;
+}
+.txtBox > div > a:hover{
+    text-decoration: underline;
+}
+.newsSection div img {
+    width: 154px;
+    height: 92px;
+}
+.newsSection div {
+    font-size: 13px;
+}
+.newsSection div .newsContents {
+    width: 154px;
+    height: 146px;
+    margin: 5px;
+}
+.newsFlow{
+    width: 655px;
+    border: 1px solid #ececec;
+    background-color: #fbfbfb;
+    font-size: 13px;
+
+}
+.newsFlow p{
+    padding-left: 12px;
+}
+.photoBox {
+    align-content: stretch;
+    align-items: baseline;
+    width: 100%;
+    height: 611px;
+    background-color: #fbfbfc;
+    border-top: 1px solid #ececec;
+}
+.footer ul, .headerSection ul {
+    font-size: 12px;
+}
+.rightSection {
+    width: 300px;
+    align-content: flex-start;
+}
+.rightSection aside .loginBox{
+    box-sizing: border-box;
+    width: 300px;
+    height: 121px;
+    padding: 13px 15px 30px;
+    background-color: #f4f4f4;
+    border: solid 1px #dedede;
+    margin-right: 0;
+}
+.rightSection aside .loginBox div {
+    width: 270px;
+    line-height: 37px;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 3px;
+    margin-right: 0px;
+}
+.rightSection aside .loginBox .kakaoLogin{
+    border: 1px solid #F6DD00;
+    background-color: #FEE500;
+}
+.rightSection aside .loginBox .kakaoLogin .iconKakao{
+    background-position: -16px -24px;
+    display: inline-block;
+    width: 12px;
+    height: 13px;
+    margin: 11px 5px 0 0;
+    vertical-align: top;
+    background-image: url('https://t1.daumcdn.net/daumtop_deco/images/top/2020/rtn/ico_pctop_login_201103.png');
+    background-size: 100px 40px;
+}
+.rightSection aside .loginBox .daumLogin .iconDaum{
+    background-position: 0 -24px;
+    display: inline-block;
+    width: 12px;
+    height: 13px;
+    margin: 11px 5px 0 0;
+    vertical-align: top;
+    background-image: url('https://t1.daumcdn.net/daumtop_deco/images/top/2020/rtn/ico_pctop_login_201103.png');
+    background-size: 100px 40px;
+}
+.rightSection aside .loginBox .kakaoQRlogin .iconQr{
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin: -3px 4px 0 0;
+    background-position: -84px -24px;
+    vertical-align: middle;
+    background-image: url('https://t1.daumcdn.net/daumtop_deco/images/top/2020/rtn/ico_pctop_login_201103.png');
+    background-size: 100px 40px;
+}
+.rightSection aside .loginBox .daumLogin{
+    border: 1px solid #e9e9e9;
+    background-color: #fff;
+}
+.rightSection aside .loginBox span{
+    font-size: 11px;
+    line-height: 16px;
+    color: #555;
+}
+.rightSection aside .adBox img{
+    width: 300px;
+    height: 150px;
+    margin-top: 15px;
+    padding: 0;
+    border: solid 1px #dedede;
+    box-sizing: border-box;
+}
+.shoppingBox{
+    box-sizing: border-box;
+    height: 777px;
+    margin-top: 15px;
+}
+.shoppingPhotoBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shoppingPhotoBox div{
+    height: 155px;
+}
+.shoppingBox .shoppingBoxTitle{
+    background-color: #fafafa;
+    display: flex;
+    padding: 13px;
+    font-size: 16px;
+    border: solid 1px #dedede;
+    border-bottom: none;
+}
+.shoppingBox .shoppingBoxTitle .market{
+    margin-inline-start: auto;
+    font-size: 13px;
+    color: #8b8b8b;
+}
+.shoppingBox .shoppingBoxTitle .market img{
+    vertical-align: middle;
+    margin-left: 12px;
+}
+.shoppingBox .shoppingBoxTitle .market > span > span{
+    vertical-align: bottom;
+}
+.shoppingBox .brandList {
+    font-size: 12px;
+}
+.shoppingBox .brandList ul{
+    display: block;
+    padding-left: 0;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+.shoppingBox .brandList ul li{
+    height: 22px;
+    padding: 0;
+}
+.shoppingBox .brandList ul a:hover{
+    text-decoration: underline;
+}
+.shoppingBox .shoppingContents {
+    border: solid 1px #dedede;
+    padding: 8px 14px;
+}
+.shoppingBox .shoppingContents .pageNum .btn{
+    border-radius: 0px;
+    border: solid 1px #dedede;
+    background-color: transparent;
+    margin: 0;
+    cursor: pointer;
+}
+.shoppingBox .shoppingContents p {
+    word-spacing: 2px;
+    padding-pottom: 7px;
+}
+.shoppingBox .shoppingContents .shoppingPhotoBox{
+    margin: 0;
+    padding: 0;
+}
+.shoppingBox .shoppingContents .pageNum{
+    text-align: right;
+    font-size: 13px;
+    margin: 5px;
+}
+.shoppingBox .shoppingPhotoBox img {
+    width: 86px;
+    height: 104px;
+    margin: 2px;
+}
+.shoppingPhotoBox p{
+    margin: 0;
+    width: 86px;
+    font-size: 12px;
+}
+.hotDeal{
+    border: solid 1px #dedede;
+}
+.hotDeal .hotDealTitle{
+    background-color: #fafafa;
+    display: flex;
+    padding: 13px;
+    font-size: 16px;
+    border: solid 1px #dedede;
+}
+.hotDeal .hotDealTitle p{
+    margin: 0;
+    padding: 0;
+}
+.hotDeal .hotDealTitle .pageNum{
+    margin-inline-start: auto;
+    font-size: 13px;
+    color: #8b8b8b;
+}
+.hotDeal .hotDealTitle .pageNum .btn{
+    border-radius: 0px;
+    border: solid 1px #dedede;
+    background-color: transparent;
+    margin: 0;
+    cursor: pointer;
+}
+.hotDeal .hotDealContents{
+    padding: 17px 14px 10px;
+}
+.hotDeal .hotDealContents img{
+    box-sizing: border-box;
+    width: 110px;
+    height: 60px;
+    margin-right: 11px;
+    border: solid 1px #dedede;
+}
+.hotDeal .hotDealContents div{
+    display: flex;
+}
+.hotDeal .hotDealBtn{
+    display: flex;
+    line-height: 35px;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+}
+.hotDeal .hotDealBtn div{
+    border: solid 1px #dedede;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.kakaoTV .imgBox, .blog .imgBox, .channel .imgBox{
+    width: 154px;
+    height: 94px;
+    margin-left: 13px;
+}
+.kakaoTV img, .blog img, .channel img{
+    width: 154px;
+    height: 94px;
+}
+.channel .bigImg{
+    width: 321px;
+    height: 159px;
+}
+.kakaoTV > div, .blog > div, .channel > div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.kakaoTV > div p, .blog > div p, .channel > div p{
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+.blog div .writer, .channel div .writer{
+    font-size: 12px;
+    color: #888888;
+}

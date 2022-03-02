@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://www.daum.net/favicon.ico"/>
+    <link rel="stylesheet" href="style.css">
     <title>Daum</title>
 </head>
 <body>
@@ -266,9 +267,10 @@
         <div class="rightSection">
             <aside>
                 <div class="loginBox">
-                    <div class="kakaoLogin">카카오계정으로시작하기</div>
-                    <div class="daumLogin">daum아이디로시작히기</div>
-                    <span class="kakaoQRlogin" style="margin-start: auto">카카오 QR코드로 로그인</span>
+                    <div class="kakaoLogin"><span class="iconKakao"></span>카카오계정으로 로그인</div>
+                    <div class="daumLogin"><span class="iconDaum"></span>Daum 아이디로 로그인</div>
+                    <span class="kakaoQRlogin">
+                        <span class="iconQr"></span>카카오 QR코드로 로그인</span>
                     <span>회원가입</span>
                 </div>
                 <div class="adBox">
@@ -276,10 +278,16 @@
                 </div>
                 <div class="shoppingBox">
                     <div class="shoppingBoxTitle">
-                        쇼핑 >
-                        <div>
-                            <span>G마켓</span>
-                            <span>옥션</span>
+                        <b>쇼핑</b>&nbsp;>
+                        <div class="market">
+                            <span>
+                                <img src="https://t1.daumcdn.net/b2/shopping/images/0007dd004fef6853e6ff76cc0859fd593210cecf" width="18" height="18"/>
+                                <span>G마켓</span>
+                            </span>
+                            <span>
+                                <img src="https://t1.daumcdn.net/b2/shopping/images/b5f2e2802e69778edc2dc5454a7992bc40f6dacf" width="18" height="18"/>
+                                <span>옥션</span>
+                            </span>
                         </div>
                     </div>
                     <div class="shoppingContents">
@@ -292,8 +300,8 @@
                         </div>
                         <div class="pageNum">
                             <span>11/<span>15</span></span>
-                            <button><</button>
-                            <button>></button>
+                            <button class="btn"><</button>
+                            <button class="btn">></button>
                         </div>
                         <div class="shoppingPhotoBox">
                             <div>
@@ -322,7 +330,7 @@
                             </div>
                             <div>
                                 <img src="img/shopping_7.png" alt="shopping img">
-                                <p>감탄 나오는 슈즈 리얼 데일리아이템~</p>
+                                <p>헤지스 골프<br>단하루 50%</p>
                             </div>
                             <div>
                                 <img src="img/shopping_8.png" alt="shopping img">
@@ -346,42 +354,46 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hotDeal">
-                        <p>품절주의! 역대급 핫딜</p>
+                </div>
+                <div class="hotDeal">
+                    <div class="hotDealTitle">
+                        <p><b>품절주의! 역대급 핫딜</b></p>
+                        <div class="pageNum">
+                            <span>3/<span>6</span></span>
+                            <button class="btn"><</button>
+                            <button class="btn">></button>
+                        </div>
+                    </div>
+                    <div class="hotDealContents">
                         <div>
-                            <img>
-                            <span>키친타올4+4+4+4가격굿</span>
-                            <span>10,900원</span>
+                            <img src="img/hotDeal_1.png" alt="hotdeal_1">
+                            <p>키친타올4+4+4+4가격굿<br/>10,900원</p>
                         </div>
                         <div>
-                            <img>
-                            <span>캡슐형 세탁조 클리너</span>
-                            <span>9,900원</span>
+                            <img src="img/hotDeal_2.png" alt="hotdeal_2">
+                            <p>캡슐형 세탁조 클리너<br/>9,900원</p>
                         </div>
                         <div>
-                            <img>
-                            <span>치과그만~오랄비치실2+2</span>
-                            <span>10,900원</span>
+                            <img src="img/hotDeal_3.png" alt="hotdeal_3">
+                            <p>치과그만~오랄비치실2+2<br/>10,900원</p>
                         </div>
                         <div>
-                            <img>
-                            <span>봄셔츠50종 저렴하게 가져</span>
-                            <span>20,900원</span>
+                            <img src="img/hotDeal_4.png" alt="hotdeal_4">
+                            <p>봄셔츠50종 저렴하게 가져<br/>20,900원</p>
                         </div>
                         <div>
-                            <img>
-                            <span>편해놀라 180도빗자루set!</span>
-                            <span>10,000원</span>
+                            <img src="img/hotDeal_5.png" alt="hotdeal_5">
+                            <p>편해놀라 180도빗자루set!<br/>10,000원</p>
                         </div>
-                        <div>
+                        <div class="hotDealBtn">
                             <div>쇼핑홈</div>
                             <div>핫딜</div>
                             <div>식학기 준비</div>
                         </div>
                     </div>
-                    <div class="adBox">
-                        <img src="img/adSmall.png" alt="ad"/>
-                    </div>
+                </div>
+                <div class="adBox">
+                    <img src="img/adSmall.png" alt="ad"/>
                 </div>
             </aside>
         </div>
@@ -434,280 +446,4 @@
     </footer>
 </div>
 </body>
-<style>
-    body {
-        display: flex;
-        justify-content: center;
-    }
-    a {
-        text-decoration: none;
-        color: #222;
-        cursor: pointer;
-    }
-    .headerSection .top a {
-        font-size: 11px;
-        color: #888;
-    }
-    .headerSection .top a:hover {
-        text-decoration: underline;
-        color: #418cf7;
-    }
-    .header {
-        display: flex;
-        align-items: center;
-        vertical-align: text-top;
-    }
-    .header a {
-        color: #555;
-        padding-right: 14px;
-    }
-    .header a:hover {
-        text-decoration: underline;
-    }
-    .logo {
-        width: 180px;
-        height: 94px;
-        padding-bottom: 20px;
-    }
-
-    .searchInput {
-        width: 520px;
-        height: 46px;
-    }
-    ul {
-        list-style: none;
-        display: flex;
-        word-break: keep-all;
-    }
-    li {
-        padding: 4px;
-    }
-    nav {
-        border-top: 1px solid #ececec;
-        margin: 0;
-        padding: 0;
-        vertical-align: center;
-        border-bottom: 1px solid #888
-    }
-    nav ul {
-        margin: 0;
-        padding: 0;
-    }
-    nav li {
-        margin-right: 5px;
-        padding: 10px 5px;
-    }
-    nav li a {
-        font-size: 13px;
-        font-weight: bold;
-    }
-    main {
-        margin: 15px 0 auto;
-    }
-    main{
-        display: flex;
-    }
-    .mainSection{
-        width: 655px;
-    }
-    .mainSection .mainNews ul {
-        margin: 0px auto;
-        padding: 0;
-        font-size: 16px;
-        font-weight: bold;
-        line-height: 36px;
-        color: #222;
-    }
-    .mainSection .mainNews ul li a:not(.newsNavTitle) {
-        margin-right: 3px;
-    }
-    .mainSection .mainNews ul .dotBtn {
-        padding: 4px 0px;
-        letter-spacing: -10px;
-        padding-right: 10px;
-    }
-    .mainSection .mainNews ul .dotBtn a {
-        color: darkgray;
-    }
-    .newsSection .newsSectionTop {
-        display: flex;
-    }
-    .newsSection .newsSectionBottom{
-        display: flex;
-    }
-    .newsSection .newsImgBox{
-        width: 330px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .newsSection .newsTxtBox{
-        width: 316px;
-        flex-wrap: wrap;
-        align-content: flex-start;
-    }
-    .newsSection .newsTxtBox .txtBox{
-        height: 150px;
-        margin: 5px 0;
-        line-height: 20px;
-    }
-    .newsSection .newsTxtBox .txtBox div {
-        padding: 3px 0;
-    }
-    .txtBox > div > a:hover{
-        text-decoration: underline;
-    }
-    .newsSection div img {
-        width: 154px;
-        height: 92px;
-    }
-    .newsSection div {
-        font-size: 13px;
-    }
-    .newsSection div .newsContents {
-        width: 154px;
-        height: 146px;
-        margin: 5px;
-    }
-    .newsFlow{
-        width: 655px;
-        border: 1px solid #ececec;
-        background-color: #fbfbfb;
-        font-size: 13px;
-
-    }
-    .newsFlow p{
-        padding-left: 12px;
-    }
-    .photoBox {
-        align-content: stretch;
-        align-items: baseline;
-        width: 100%;
-        height: 611px;
-        background-color: #fbfbfc;
-        border-top: 1px solid #ececec;
-    }
-    .footer ul, .headerSection ul {
-        font-size: 12px;
-    }
-    .rightSection {
-        width: 300px;
-        align-content: flex-start;
-    }
-    .rightSection aside .loginBox{
-        width: 300px;
-        height: 100px;
-        padding: 13px 15px 15px 15px;
-        background-color: #f4f4f4;
-    }
-    .rightSection aside .loginBox div {
-        width: 270px;
-        line-height: 37px;
-        text-align: center;
-        font-size: 13px;
-        margin-bottom: 3px;
-        margin-right: 0px;
-    }
-    .rightSection aside .loginBox .kakaoLogin{
-        background-color: #f3e62c;
-    }
-    .rightSection aside .loginBox .daumLogin{
-        background-color: #fff;
-    }
-    .rightSection aside .loginBox span{
-        font-size: 11px;
-        line-height: 16px;
-        color: #555;
-    }
-    .rightSection aside .adBox img{
-        width: 300px;
-        height: 150px;
-    }
-    .shoppingBox{
-        height: 777px;
-    }
-    .shoppingPhotoBox{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .shoppingBox .shoppingBoxTitle{
-        background-color: #fafafa;
-        display: flex;
-        padding: 13px;
-        font-size: 12px;
-        border: solid 1px #f4f4f4;
-        border-bottom: none;
-    }
-    .shoppingBox .shoppingBoxTitle div{
-        margin-inline-start: auto;
-        color: #8b8b8b;
-    }
-    .shoppingBox .brandList {
-        font-size: 11px;
-    }
-    .shoppingBox .brandList ul{
-        display: block;
-        padding-left: 0;
-    }
-    .shoppingBox .brandList ul li{
-        height: 22px;
-        padding: 0;
-        letter-spacing: 1px;
-    }
-    .shoppingBox .brandList ul a:hover{
-        text-decoration: underline;
-    }
-    .shoppingBox .shoppingContents {
-        border: solid 1px #f4f4f4;
-        padding: 8px 14px;
-    }
-    .shoppingBox .shoppingContents p {
-        word-spacing: 2px;
-        padding-top: 7px;
-    }
-    .shoppingBox .shoppingContents .shoppingPhotoBox{
-        margin: 0;
-        padding: 0;
-    }
-    .shoppingBox .shoppingContents .pageNum{
-        text-align: right;
-        font-size: 13px;
-        margin: 5px;
-    }
-    .shoppingBox .shoppingPhotoBox img {
-        width: 86px;
-        height: 104px;
-        margin: 2px;
-    }
-    .shoppingPhotoBox p{
-        margin: 0;
-        width: 86px;
-        font-size: 12px;
-    }
-    .kakaoTV .imgBox, .blog .imgBox, .channel .imgBox{
-        width: 154px;
-        height: 94px;
-        margin-left: 13px;
-    }
-    .kakaoTV img, .blog img, .channel img{
-        width: 154px;
-        height: 94px;
-    }
-    .channel .bigImg{
-        width: 321px;
-        height: 159px;
-    }
-    .kakaoTV > div, .blog > div, .channel > div{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .kakaoTV > div p, .blog > div p, .channel > div p{
-        flex-wrap: wrap;
-        font-size: 13px;
-    }
-    .blog div .writer, .channel div .writer{
-        font-size: 12px;
-        color: #888888;
-    }
-
-</style>
 </html>
