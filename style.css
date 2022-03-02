@@ -225,17 +225,18 @@ main{
     line-height: 16px;
     color: #555;
 }
+.adBox{
+    margin-top: 15px;
+}
 .rightSection aside .adBox img{
     width: 300px;
     height: 150px;
-    margin-top: 15px;
     padding: 0;
     border: solid 1px #dedede;
     box-sizing: border-box;
 }
 .shoppingBox{
     box-sizing: border-box;
-    height: 777px;
     margin-top: 15px;
 }
 .shoppingPhotoBox{
@@ -316,7 +317,7 @@ main{
     font-size: 12px;
 }
 .hotDeal{
-    border: solid 1px #dedede;
+    margin-top: 15px;
 }
 .hotDeal .hotDealTitle{
     background-color: #fafafa;
@@ -324,6 +325,7 @@ main{
     padding: 13px;
     font-size: 16px;
     border: solid 1px #dedede;
+    border-bottom: none;
 }
 .hotDeal .hotDealTitle p{
     margin: 0;
@@ -343,6 +345,7 @@ main{
 }
 .hotDeal .hotDealContents{
     padding: 17px 14px 10px;
+    border: solid 1px #dedede;
 }
 .hotDeal .hotDealContents img{
     box-sizing: border-box;
@@ -370,7 +373,6 @@ main{
 .kakaoTV .imgBox, .blog .imgBox, .channel .imgBox{
     width: 154px;
     height: 94px;
-    margin-left: 13px;
 }
 .kakaoTV img, .blog img, .channel img{
     width: 154px;
