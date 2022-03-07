@@ -73,6 +73,20 @@ nav li a {
     font-size: 13px;
     font-weight: bold;
 }
+nav .weather img{
+    background-image: url('https://t1.daumcdn.net/daumtop_deco/images/top/2021/rtn/ico_ws_210513.png');
+    width: 26px;
+    height: 26px;
+    background-size: 270px 120px;
+}
+nav .weather .temperature{
+    background-image: url('https://t1.daumcdn.net/daumtop_deco/images/top/2017/rtn/img_weather_170628.png');
+    background-size: 300px 460px;
+    background-position: -210px -270px;
+    width: 17px;
+    height: 15px;
+}
+
 main {
     margin: 15px 0 auto;
 }
@@ -81,6 +95,11 @@ main{
 }
 .mainSection{
     width: 655px;
+}
+.mainSection .mainAd{
+    box-sizing: border-box;
+    width: 655px;
+    height: 120px;
 }
 .mainSection .mainNews ul {
     margin: 0px auto;
