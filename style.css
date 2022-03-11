@@ -16,6 +16,18 @@ p{
 button{
     margin: 0;
 }
+.btn{
+    border-radius: 0px;
+    border: solid 1px #dedede;
+    background-color: transparent;
+    margin: 0;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    color: gray;
+    text-align: center;
+    font-size: 10px;
+}
 .headerSection .top a {
     font-size: 11px;
     color: #888;
@@ -42,7 +54,8 @@ button{
     padding-bottom: 20px;
 }
 .searchBox{
-    height: 44px;
+    width: 520px;
+    height: 46px;
     margin: 1px 1px 0 0;
     border: 1px solid #0089ff;
     border-radius: 1px;
@@ -60,9 +73,9 @@ button{
     background-color: transparent;
     outline: 0;
 }
-.searchBox button {
+.searchBox .keyboardBtn{
     position: absolute;
-    left: 400px;
+    left: 440px;
     border: 0 none;
     cursor: pointer;
     background-image: url('https://t1.daumcdn.net/daumtop_deco/images/top/2017/rtn/img_keyboard_171229.png');
@@ -72,6 +85,21 @@ button{
     margin: 1px;
     line-height: 44px;
     background-position: 0 0;
+}
+.searchBox .searchBtn{
+    cursor: pointer;
+    background-image: url('https://t1.daumcdn.net/daumtop_deco/images/top/2017/rtn/ico_pctop_190618_v2.png');
+    position: absolute;
+    top: 0;
+    left: 470px;
+    width: 49px;
+    height: 42px;
+    margin: 1px;
+    line-height: 44px;
+    background-size: 250px 310px;
+    background-position: -40px -231px;
+    background-color: transparent;
+    border: 0;
 }
 ul {
     list-style: none;
