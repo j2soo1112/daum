@@ -21,7 +21,7 @@
             <div>
                 <div class="searchBox">
                     <input class="searchInput" />
-                    <button class="keyboardBtn"></button>
+                    <button class="keybqoardBtn"></button>
                     <button class="searchBtn"></button>
                 </div>
                 <ul>
@@ -39,7 +39,7 @@
         </div>
     </header>
     <nav>
-        <ul>
+        <ul class="navList">
             <li><a>카페</a></li>
             <li><a>메일</a></li>
             <li><a>뉴스</a></li>
@@ -54,10 +54,14 @@
             <li><a>게임</a></li>
             <li><a>같이가치</a></li>
             <li><a>더보기</a></li>
+        </ul>
+        <ul class="weatherList">
             <li>03.07.(월)</li>
             <li>서울시</li>
             <li class="weather">
-                <img/>5<img class="temperature"/>
+                <img class="weatherImg"/>
+                <span>5</span>
+                <img class="temperature"/>
             </li>
         </ul>
     </nav>
@@ -163,116 +167,135 @@
                 </div>
             </article>
             <div class="newsFlow">
-                <p><b>스포츠홈</b>> 축구 해외축구 야구 해외야구 골프 농구 배구 일반 e스포츠 </p>
+                <p>
+                    <b>스포츠홈</b>
+                    <span style="padding:0px">></span>
+                    <span>축구</span>
+                    <span>해외축구</span>
+                    <span>야구</span>
+                    <span>해외야구</span>
+                    <span>골프</span>
+                    <span>농구</span>
+                    <span>배구</span>
+                    <span>일반</span>
+                    <span>e스포츠</span>
+                </p>
             </div>
             <hr/>
             <div class="kakaoTV">
-                <div>
-                    <span>카카오TV</span>
+                <div class="title">
+                    <span class="main"><strong>카카오TV</strong></span>
                     <span><a>오리지널 콘텐츠</a></span>
                     <span><a>TV 주요장면</a></span>
                     <span><a>많이 본 TV</a></span>
                 </div>
-                <div>
-                    <div>
-                        <img src="img/kakaotv_1.png" alt="kakaotv_1">
+                <ul>
+                    <li>
+                        <img class="fst" src="img/kakaotv_1.png" alt="kakaotv_1">
                         <p>전 부치러 온 남편,<br/>왜 제가 더 눈치보이죠?</p>
-                    </div>
-                    <div>
+                    <li/>
+                    <li>
                         <img src="img/kakaotv_2.png" alt="kakaotv_2">
                         <p>양궁 잘한다던<br/>초아의 실력</p>
-                    </div>
-                    <div>
+                    </li>
+                    <li>
                         <img src="img/kakaotv_3.png" alt="kakaotv_3">
                         <p>남편과 말다툼 후<br/>갑작스러운 배의 통증</p>
-                    </div>
-                    <div>
+                    </li>
+                    <li>
                         <img src="img/kakaotv_4.png" alt="kakaotv_4">
                         <p>"설마 애한테 무슨<br/>문제가 생긴 건 아니지?"</p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
             <hr/>
             <div class="blog">
-                <div>
-                    <span><a>카페</a></span>
-                    <span><a>브런치</a></span>
-                    <span><a>티스토리</a></span>
-                    <span><a>카카오스토리</a></span>
+                <div class="title">
+                    <strong>
+                        <span><a>카페</a></span>
+                        <span><a>브런치</a></span>
+                        <span><a>티스토리</a></span>
+                        <span><a>카카오스토리</a></span>
+                    </strong>
                 </div>
-                <div>
-                    <div class="imgBox">
+                <ul>
+                    <li>
                         <img src="img/brunch_1.png" alt="brunch_1">
                         <p>방송 제작기 ON AIR</p>
                         <p class="writer">by 나, 다큐하고 있니?</p>
-                    </div>
-                    <div class="imgBox">
+                    </li>
+                    <li>
                         <img src="img/brunch_2.png" alt="brunch_2">
                         <p>일상의 변화에 맞닿은<br/>죽음과 죽음의례</p>
                         <p class="writer">by 4차 산업혁명시대 다시 쓰...</p>
-                    </div>
-                    <div class="imgBox">
+                    </li>
+                    <li>
                         <img src="img/brunch_3.png" alt="brunch_3">
                         <p>개는 훌륭하다: 관점</p>
                         <p class="writer">by TV프로그램으로 보는 인생...</p>
-                    </div>
-                    <div class="imgBox">
+                    </li>
+                    <li>
                         <img src="img/brunch_4.png" alt="brunch_4">
                         <p>천만 원을 쓰기로 했다</p>
                         <p class="writer">by 천만원 쓰기 챌린지 시작합...</p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
             <hr/>
             <div class="channel">
-                <div>
-                    <span><a>홈&쿠킹</a></span>
-                    <span><a>머니</a></span>
-                    <span><a>동물</a></span>
-                    <span><a>스타일</a></span>
-                    <span><a>M+</a></span>
-                    <span><a>여행맛집</a></span>
-                    <span><a>직장IN</a></span>
-                    <span><a>뮤직</a></span>
-                    <span><a>웹툰</a></span>
-                    <span><a>게임</a></span>
-                    <span><a>같이가치</a></span>
+                <div class="title">
+                    <strong>
+                        <span><a>홈&쿠킹</a></span>
+                        <span><a>머니</a></span>
+                        <span><a>동물</a></span>
+                        <span><a>스타일</a></span>
+                        <span><a>M+</a></span>
+                        <span><a>여행맛집</a></span>
+                        <span><a>직장IN</a></span>
+                        <span><a>뮤직</a></span>
+                        <span><a>웹툰</a></span>
+                        <span><a>게임</a></span>
+                        <span><a>같이가치</a></span>
+                    </strong>
                 </div>
-                <div>
-                    <div class="imgBox">
+                <ul>
+                    <li>
                         <img class="bigImg" src="img/style_1.png" alt="style_1"/>
-                    </div>
-                    <div class="imgBox">
+                    </li>
+                    <li>
                         <img src="img/style_2.png" alt="style_2">
                         <p>블랙핑크 지수, 파리 패션<br/>위크 출국길! 투톤헤어 시</p>
                         <p class="writer">패션엔</p>
-                    </div>
-                    <div class="imgBox">
+                    </li>
+                    <li>
                         <img src="img/style_3.png" alt="style_3">
                         <p>목걸인 줄 알았는데 마사지<br/>기라고?</p>
                         <p class="writer">리빙픽</p>
-                    </div>
-                    <div class="imgBox">
+                    </li>
+                    <li>
                         <img src="img/style_4.png" alt="style_4">
                         <p>'신사와 아가씨'윤진이, 러<br/>블리 여친룩!화사한 트위</p>
                         <p class="writer">패션엔</p>
-                    </div>
-                    <div class="imgBox">
+                    </li>
+                    <li>
                         <img src="img/style_5.png" alt="style_5">
                         <p>채정안, 주말에도 열일! 생<br/>얼 털털 출근룩 '그래도 신</p>
                         <p class="writer">패션엔</p>
-                    </div>
-                    <div class="imgBox">
+                    </li>
+                    <li>
                         <img src="img/style_6.png" alt="style_6">
                         <p>진정한 패피는 계절을 앞서<br/>간다!! 가벼운날씨에 포인</p>
                         <p class="writer">유끼만듦</p>
-                    </div>
-                    <div class="imgBox">
+                    </li>
+                    <li>
                         <img src="img/style_7.png" alt="style_7">
                         <p>"여기 가자!" 지인의 말 한<br/>마디에 몸짱 변신한 운동</p>
                         <p class="writer">맥스큐</p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bestSection">
+                <img src="img/bestImg.png" alt="best"/>
             </div>
         </section>
         <div class="rightSection">
@@ -409,22 +432,27 @@
             </aside>
         </div>
     </main>
-    <hr>
     <footer class="footer">
         <section>
             <div class="photoBox">
                 <p>오늘의 포토</p>
-                <img src="img/leftPhoto.png" alt="left photo" height="400px" width="154px"/>
-                <img src="img/centerPhoto.png" alt="center photo" height="400px" width="682px"/>
-                <img src="img/rightPhoto.png" alt="right photo" height="400px" width="154px"/>
-                <div>
-                    <img src="img/bottomPhoto.png" alt="bottom photo" height="58px" width="990px"/>
+                <div class="photoView">
+                    <img src="img/leftPhoto.png" alt="left photo" height="400px" width="154px"/>
+                    <img src="img/centerPhoto.png" alt="center photo" height="400px" width="682px"/>
+                    <img src="img/rightPhoto.png" alt="right photo" height="400px" width="154px"/>
+                </div>
+                <div class="photoList">
+                    <img src="img/bottomPhoto.png" alt="bottom photo" height="60px" width="990px"/>
                 </div>
             </div>
         </section>
-        <div>
-            <img src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png" width="52px">
-            <p>공지사항 > <span>제 20대 대통령 선거를 안내합니다.</span></p>
+        <hr>
+        <div class="footerBox">
+            <div class="notice">
+                <img src="https://t1.daumcdn.net/daumtop_deco/images/top/2017/logo_foot.gif" width="52px">
+                <p><strong>공지사항</strong> > <span> 제 20대 대통령 선거를 안내합니다.</span></p>
+                <p class="allService">서비스 전체보기 ></p>
+            </div>
             <ul>
                 <li>회사소개</li>
                 <span>∙</span>
@@ -445,13 +473,16 @@
                 <span>∙</span>
                 <li>청소년보호정책</li>
                 <span>∙</span>
-                <li>위치기반서비스이용약관</li>
+                <li><strong>위치기반서비스이용약관</strong></li>
                 <span>∙</span>
-                <li>개인정보처리방침</li>
+                <li><strong>개인정보처리방침</strong></li>
                 <span>∙</span>
                 <li>웹접근성안내</li>
                 <span>∙</span>
                 <li>고객센터</li>
+            </ul>
+            <ul>
+                <li>Copyright© Kakao Corp. All rights reserved. </li>
             </ul>
         </div>
     </footer>

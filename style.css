@@ -12,6 +12,11 @@ a {
 }
 p{
     padding: 0;
+    margin: 0;
+}
+ul{
+    padding: 0;
+    margin-top: 0;
 }
 button{
     margin: 0;
@@ -40,6 +45,13 @@ button{
     display: flex;
     align-items: center;
     vertical-align: text-top;
+}
+.header ul{
+    margin-top: 5px;
+    padding: 0;
+}
+.header ul div {
+    margin-left: auto;
 }
 .header a {
     color: #555;
@@ -75,14 +87,14 @@ button{
 }
 .searchBox .keyboardBtn{
     position: absolute;
-    left: 440px;
+    left: 425px;
     border: 0 none;
     cursor: pointer;
     background-image: url('https://t1.daumcdn.net/daumtop_deco/images/top/2017/rtn/img_keyboard_171229.png');
     background-size: 30px 160px;
     width: 29px;
     height: 42px;
-    margin: 1px;
+    margin: 1px 5px;
     line-height: 44px;
     background-position: 0 0;
 }
@@ -91,10 +103,10 @@ button{
     background-image: url('https://t1.daumcdn.net/daumtop_deco/images/top/2017/rtn/ico_pctop_190618_v2.png');
     position: absolute;
     top: 0;
-    left: 470px;
+    left: 465px;
     width: 49px;
     height: 42px;
-    margin: 1px;
+    margin: 1px 5px;
     line-height: 44px;
     background-size: 250px 310px;
     background-position: -40px -231px;
@@ -114,7 +126,12 @@ nav {
     margin: 0;
     padding: 0;
     vertical-align: center;
-    border-bottom: 1px solid #888
+    border-bottom: 1px solid #888;
+    display: flex;
+}
+nav .weatherList {
+    margin-left: auto;
+    vertical-align: center;
 }
 nav ul {
     margin: 0;
@@ -124,15 +141,22 @@ nav li {
     margin-right: 5px;
     padding: 10px 5px;
 }
-nav li a {
+nav li {
     font-size: 13px;
     font-weight: bold;
 }
-nav .weather img{
+nav .weather {
+    padding: 5px 3px;
+    vertical-align: middle;
+}
+nav .weather .weatherImg{
     background-image: url('https://t1.daumcdn.net/daumtop_deco/images/top/2021/rtn/ico_ws_210513.png');
     width: 26px;
     height: 26px;
     background-size: 270px 120px;
+}
+nac .weather span{
+
 }
 nav .weather .temperature{
     background-image: url('https://t1.daumcdn.net/daumtop_deco/images/top/2017/rtn/img_weather_170628.png');
@@ -140,6 +164,8 @@ nav .weather .temperature{
     background-position: -210px -270px;
     width: 17px;
     height: 15px;
+    border: 0;
+    padding-bottom: 5px;
 }
 
 main {
@@ -150,6 +176,7 @@ main{
 }
 .mainSection{
     width: 655px;
+    margin-right: 35px;
 }
 .mainSection .mainAd{
     box-sizing: border-box;
@@ -211,7 +238,7 @@ main{
 }
 .newsSection div .newsContents {
     width: 154px;
-    height: 146px;
+    height: 136px;
     margin: 5px;
 }
 .newsFlow{
@@ -219,18 +246,80 @@ main{
     border: 1px solid #ececec;
     background-color: #fbfbfb;
     font-size: 13px;
-
+    padding: 10px 0px;
+    margin: 20px 0;
 }
 .newsFlow p{
     padding-left: 12px;
 }
+.newsFlow p span {
+    padding: 0 7px;
+    color: #555;
+}
 .photoBox {
+    padding: 29px 0px 45px;
     align-content: stretch;
     align-items: baseline;
     width: 100%;
-    height: 611px;
+    height: 530px;
     background-color: #fbfbfc;
     border-top: 1px solid #ececec;
+}
+.photoBox p {
+    font-size: 16px;
+    font-weight: bold;
+}
+.photoBox .photoView {
+    margin-top: 20px;
+    height: 400px;
+}
+.photoBox .photoList{
+    margin-top: 20px;
+}
+.kakaoTV .title{
+    display: table-cell;
+    height: 52px;
+    vertical-align: middle;
+}
+.kakaoTV .title .main{
+    font-size: 16px;
+}
+.kakaoTV .title span:not(.main){
+    font-size: 13px;
+    color: #888;
+    margin-left: 14px;
+}
+.blog .title {
+    display: table-cell;
+    height: 52px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.blog .title span {
+    margin-right: 5px;
+}
+.blog .writer {
+    font-size: 12px;
+    color: #888;
+}
+.channel .title{
+    display: table-cell;
+    height: 52px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.channel .title span {
+    margin-right: 5px;
+}
+.channel .writer{
+    font-size: 12px;
+    color: #888;
+}
+.bestSection img{
+    width: 655px;
+    height: 159px;
+    border: solid 1px #dedede;
+    margin-top: 10px;
 }
 .footer ul, .headerSection ul {
     font-size: 12px;
@@ -430,41 +519,54 @@ main{
 }
 .hotDeal .hotDealContents div{
     display: flex;
+    margin-bottom: 8px;
 }
-.hotDeal .hotDealBtn{
+.hotDeal .hotDealBtn {
     display: flex;
     line-height: 35px;
     justify-content: center;
     align-items: center;
     width: 270px;
+    padding-top: 8px;
 }
-.hotDeal .hotDealBtn div{
+.hotDeal .hotDealBtn div {
     border: solid 1px #dedede;
     width: 100%;
     display: inline-block;
     text-align: center;
 }
-.kakaoTV .imgBox, .blog .imgBox, .channel .imgBox{
+.kakaoTV img, .blog img, .channel img {
     width: 154px;
     height: 94px;
 }
-.kakaoTV img, .blog img, .channel img{
-    width: 154px;
-    height: 94px;
-}
-.channel .bigImg{
+.channel .bigImg {
     width: 321px;
     height: 159px;
 }
-.kakaoTV > div, .blog > div, .channel > div{
+.channel > ul{
     display: flex;
     flex-wrap: wrap;
 }
-.kakaoTV > div p, .blog > div p, .channel > div p{
-    flex-wrap: wrap;
-    font-size: 13px;
+.footerBox{
+    padding: 37px 0px 78px;
 }
-.blog div .writer, .channel div .writer{
+.footerBox .notice{
+    display: flex;
+    margin-bottom: 30px;
+}
+.notice img{
+    display: block;
+    vertical-align: top;
+    margin-right: 37px;
+}
+.footerBox .notice .allService{
+    margin-left: auto;
+    font-weight: bold;
+    color: #888;
+}
+.footer .footerBox ul{
     font-size: 12px;
-    color: #888888;
+    color: #888;
+    line-height: 12px;
+    margin: 0;
 }
